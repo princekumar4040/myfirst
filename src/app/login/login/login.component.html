@@ -1,0 +1,12 @@
+<p>login works!</p>
+<form #Form=ngForm>
+
+<input type="text" name="email"   [(ngModel)]=email>
+
+<a routerLink='home'><button>Login</button></a>
+
+</form>
+
+<div *ngIf="false">
+<app-home [data]='email'  ></app-home>
+</div>
